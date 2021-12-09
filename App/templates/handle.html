@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<head>
+    <style>
+        body {
+            background-color : #CCFFFF;
+        }
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button{
+            background-color : #1c87c9;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<div class="center">
+
+    <form class="text-center border border-light p-5" action="razorpay" method="POST">
+        {% csrf_token %}
+        <p class="h3 mb-3"><i class="fas fa-clipboard-check"></i>Payment Option</p>
+
+        <a href="{% url 'razorpay' %}" class="button">Pay with Razorpay</a>
+        <a href="{% url 'stripe' %}" class="button">Pay with Stripe</a>
+
+    </form>
+
+</div>
+
+
+{% endblock %}

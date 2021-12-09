@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<head>
+    <style>
+        body {
+            background-color : #CCFFFF;
+        }
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button{
+            background-color : #4CAF50;
+        }
+    </style>
+</head>
+
+<div class="center">
+
+    <form class="text-center border border-light p-5" action="success" method="POST">
+        {% csrf_token %}
+        <p class="h3 mb-3"><i class="fas fa-clipboard-check"></i>Payment through Stipe</p>
+        <p class="mb-3">It seems you are Kind Hearted</p>
+
+        <script
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_test_51K47e0SJn6TkM3OsJzePZ2mNzgnTy9Q7O70nbQGp51mC7stzy0hqoAcGR9CupmYTKV2UcprZRec2obcI0tWuKic700kzXmSGxU"
+                data-name="Payment Gateway"
+                data-description="Payment through stripe"
+                data-amount="500"
+                data-currency="inr"
+                data-label="Pay with Stripe">
+        </script>
+
+    </form>
+
+</div>
+
+
+{% endblock %}
