@@ -1,15 +1,12 @@
 ansi2html==1.6.0
 argon2-cffi==20.1.0
 asgiref==3.4.1
-async-generator==1.10
 attrs==20.2.0
 backcall==0.2.0
 backports.entry-points-selectable==1.1.0
 backports.zoneinfo==0.2.1
-beautifulsoup4==4.9.1
 binary==1.0.0
 bleach==3.2.1
-bokeh==2.2.3
 branca==0.4.2
 Brotli==1.0.9
 certifi==2020.6.20
@@ -18,7 +15,6 @@ chardet==3.0.4
 click==7.1.2
 colorama==0.4.4
 cycler==0.10.0
-dash==1.18.1
 dash-core-components==1.14.1
 dash-html-components==1.1.1
 dash-renderer==1.8.3
@@ -31,8 +27,6 @@ django-heroku==0.3.1
 docopt==0.6.2
 entrypoints==0.3
 filelock==3.0.12
-Flask==1.1.2
-Flask-Compress==1.8.0
 folium==0.12.1
 future==0.18.2
 gunicorn==20.1.0
@@ -41,15 +35,8 @@ jedi==0.17.2
 Jinja2==2.11.2
 joblib==1.0.1
 jsonschema==3.2.0
-jupyter==1.0.0
-jupyter-client==6.1.7
-jupyter-console==6.2.0
-jupyter-core==4.6.3
-jupyter-dash==0.3.1
-jupyterlab-pygments==0.1.2
 kiwisolver==1.2.0
 MarkupSafe==1.1.1
-matplotlib==3.3.2
 mistune==0.8.4
 MouseInfo==0.1.3
 nbclient==0.5.1
@@ -58,9 +45,7 @@ nbformat==5.0.8
 nest-asyncio==1.4.2
 notebook==6.1.4
 num2words==0.5.10
-numpy==1.19.1
 packaging==20.4
-pandas==1.1.4
 pandocfilters==1.4.3
 parso==0.7.1
 pickleshare==0.7.5
@@ -83,6 +68,8 @@ python-dateutil==2.8.1
 PyTweening==1.0.3
 requests==2.24.0
 retrying==1.3.3
+Send2Trash==1.5.0
+six==1.15.0
 soupsieve==2.0.1
 sqlparse==0.4.2
 svgwrite==1.4
