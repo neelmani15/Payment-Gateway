@@ -1,1 +1,1 @@
-web: gunicorn payment-gateway123.wsgi
+web: gunicorn PaymentGateway.wsgi
